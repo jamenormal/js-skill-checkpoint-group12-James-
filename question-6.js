@@ -2,6 +2,12 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  let notOutOfStockProduct = []
+  for(let i in products){
+    if(products[i].quantity != 0){
+      notOutOfStockProduct.push(products[i])
+    }
+  }return notOutOfStockProduct
 }
 
 // ตัวอย่างการใช้งาน
